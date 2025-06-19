@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frutas e Verduras - Minimercado Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o seu CSS personalizado -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Minimercado Online</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="frutas.html">Frutas e Verduras</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="alimentos.html">Alimentos Não Perecíveis</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="higiene.html">Higiene e Limpeza</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2>Frutas e Verduras</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_fruta1.jpg" class="card-img-top" alt="Maçã">
+                    <div class="card-body">
+                        <h5 class="card-title">Maçã</h5>
+                        <p class="card-text">Deliciosa maçã fresca, rica em vitaminas.</p>
+                        <p class="card-text"><strong>Valor: R$3,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Maçã', 3)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_fruta2.jpg" class="card-img-top" alt="Banana">
+                    <div class="card-body">
+                        <h5 class="card-title">Banana</h5>
+                        <p class="card-text">Banana madura, perfeita para lanches.</p>
+                        <p class="card-text"><strong>Valor: R$2,50</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Banana', 2.5)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_verdura1.jpg" class="card-img-top" alt="Alface">
+                    <div class="card-body">
+                        <h5 class="card-title">Alface</h5>
+                        <p class="card-text">Alface fresca, ideal para saladas.</p>
+                        <p class="card-text"><strong>Valor: R$1,50</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Alface', 1.5)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_verdura2.jpg" class="card-img-top" alt="Tomate">
+                    <div class="card-body">
+                        <h5 class="card-title">Tomate</h5>
+                        <p class="card-text">Tomate maduro, saboroso e nutritivo.</p>
+                        <p class="card-text"><strong>Valor: R$2,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Tomate', 2)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center p-3">
+        <p>© 2025 Minimercado Online. Todos os direitos reservados.</p>
+        <p>Contato: contato@minimercado.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimentos Não Perecíveis - Minimercado Online</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Link para o seu CSS personalizado -->
+</head>
+<body>
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Minimercado Online</h1>
+        <nav>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="frutas.html">Frutas e Verduras</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="alimentos.html">Alimentos Não Perecíveis</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="higiene.html">Higiene e Limpeza</a></li>
+                <li class="nav-item"><a class="nav-link text-white" href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container mt-4">
+        <h2>Alimentos Não Perecíveis</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_alimento1.jpg" class="card-img-top" alt="Arroz">
+                    <div class="card-body">
+                        <h5 class="card-title">Arroz</h5>
+                        <p class="card-text">Arroz branco, ideal para acompanhar suas refeições.</p>
+                        <p class="card-text"><strong>Valor: R$5,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Arroz', 5)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_alimento2.jpg" class="card-img-top" alt="Feijão">
+                    <div class="card-body">
+                        <h5 class="card-title">Feijão</h5>
+                        <p class="card-text">Feijão carioca, rico em proteínas e sabor.</p>
+                        <p class="card-text"><strong>Valor: R$6,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Feijão', 6)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_alimento3.jpg" class="card-img-top" alt="Macarrão">
+                    <div class="card-body">
+                        <h5 class="card-title">Macarrão</h5>
+                        <p class="card-text">Macarrão tipo espaguete, perfeito para diversas receitas.</p>
+                        <p class="card-text"><strong>Valor: R$4,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Macarrão', 4)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="imagem_alimento4.jpg" class="card-img-top" alt="Açúcar">
+                    <div class="card-body">
+                        <h5 class="card-title">Açúcar</h5>
+                        <p class="card-text">Açúcar refinado, ideal para adoçar suas receitas.</p>
+                        <p class="card-text"><strong>Valor: R$3,00</strong></p>
+                        <button class="btn btn-primary" onclick="adicionarAoCarrinho('Açúcar', 3)">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center p-3">
+        <p>© 2025 Minimercado Online. Todos os direitos reservados.</p>
+        <p>Contato: contato@minimercado.com</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script> <!-- Link para o seu arquivo JavaScript -->
+</body>
+</html>
